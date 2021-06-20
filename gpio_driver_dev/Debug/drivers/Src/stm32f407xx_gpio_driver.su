@@ -1,0 +1,8 @@
+stm32f407xx_gpio_driver.c:14:13:write_bits_to_peripheral_reg	24	static
+stm32f407xx_gpio_driver.c:38:6:GPIO_Pin_Init	64	static
+stm32f407xx_gpio_driver.c:86:9:GPIO_Pin_DigitalRead	16	static
+stm32f407xx_gpio_driver.c:89:6:GPIO_Pin_DigitalWrite	16	static
+stm32f407xx_gpio_driver.c:97:6:GPIO_Pin_Toggle	16	static
+stm32f407xx_gpio_driver.c:102:10:GPIO_Port_DigitalRead	16	static
+stm32f407xx_gpio_driver.c:106:6:GPIO_Port_DigitalWrite	16	static
+stm32f407xx_gpio_driver.c:110:6:GPIO_CLK_Enable	24	static
