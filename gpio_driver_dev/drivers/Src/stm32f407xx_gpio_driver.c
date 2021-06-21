@@ -8,7 +8,7 @@
 #include "stm32f407xx_gpio_driver.h"
 
 /*********************************************************************************
- * 						      Private Helper Functions                           *
+ * 			      Private Helper Functions                           *
  *********************************************************************************/
 
 static void write_bits_to_peripheral_reg(__vo uint32_t *pReg, uint8_t bits, uint8_t position, uint8_t no_bits){
@@ -109,14 +109,14 @@ void GPIO_Port_DigitalWrite(GPIO_RegDef_t *pGPIOx, uint16_t Data){
 
 void GPIO_CLK_Enable(GPIO_RegDef_t *pGPIOx){
 	uint8_t gpio_bit_number = (pGPIOx == GPIOA)? 0:\
-			                  (pGPIOx == GPIOB)? 1:\
-					          (pGPIOx == GPIOC)? 2:\
-							  (pGPIOx == GPIOD)? 3:\
-					          (pGPIOx == GPIOE)? 4:\
-							  (pGPIOx == GPIOF)? 5:\
-							  (pGPIOx == GPIOG)? 6:\
-							  (pGPIOx == GPIOH)? 7:\
-							  (pGPIOx == GPIOI)? 8: 0;
+			          (pGPIOx == GPIOB)? 1:\
+				  (pGPIOx == GPIOC)? 2:\
+				  (pGPIOx == GPIOD)? 3:\
+				  (pGPIOx == GPIOE)? 4:\
+				  (pGPIOx == GPIOF)? 5:\
+				  (pGPIOx == GPIOG)? 6:\
+				  (pGPIOx == GPIOH)? 7:\
+				  (pGPIOx == GPIOI)? 8: 0;
 
     RCC->AHB1ENR |= (1 << gpio_bit_number);
 }
